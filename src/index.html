@@ -177,12 +177,15 @@ the License.
   <div id="search-bar">
     <input id="zona" type="text" placeholder="Zona" autocapitalize="off" spellcheck="false">
     <input id="manzana" type="text" placeholder="Manzana" autocapitalize="off" spellcheck="false">
-  </div>
-  <div id="search-bar">
     <input id="lote" type="text" placeholder="Lote" autocapitalize="off" spellcheck="false">
   </div>
 
+
   <div id="options">
+    <button onclick="logData()">
+      <i class="material-icons">photo_camera</i>
+      <span>Logeeee</span>
+    </button>
     <button onclick="takeScreenshot(this)">
       <i class="material-icons">photo_camera</i>
       <span>Take screenshot</span>
@@ -204,6 +207,14 @@ the License.
   </div>
 
   <script>
+
+    function logData() {
+      var zona = document.getElementById('zona').value;
+      var manzana = document.getElementById('manzana').value;
+      var lote = document.getElementById('lote').value;
+      console.log(zona, manzana, lote);
+    }
+
     function encodeUrl(fullUrl) {
       var url = new URL(fullUrl);
       return url.origin + url.pathname + encodeURIComponent(url.search) + encodeURIComponent(url.hash);
