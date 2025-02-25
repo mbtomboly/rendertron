@@ -26,6 +26,7 @@
     "@google-cloud/datastore": "^1.4.2",
     "@types/fs-extra": "^5.0.4",
     "@webcomponents/webcomponentsjs": "^1.2.6",
+    "@maptiler/client": "^2.2.0",
     "chrome-launcher": "^0.10.2",
     "chrome-remote-interface": "^0.26.1",
     "fs-extra": "^7.0.0",
@@ -38,7 +39,7 @@
     "koa-logger": "^3.2.0",
     "performance-now": "^2.1.0",
     "progress-bar-element": "^2.0.1",
-    "puppeteer": "^1.7.0",
+    "puppeteer": "^24.2.0",
     "semver": "^5.5.1",
     "uuid": "^3.2.1"
   },
